@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>P62 Photo Gallery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Photo Gallery</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="links"><a href="#home">HOME</a></li>
+            <li class="links"><a href="#grid">GRID</a></li>
+            <li class="links"><a href="#slide">SLIDES</a></li>
+        </ul>
+        </div>
+        </nav>
+
+    <center>
+        <section id="home">
+            <br><br>
+            <img width="900" height="550" src="flowers.gif">
+            <h3>Welcome!! Click on the Bar or scroll down to see a grid of flowers or Slide Show of flowers</h3>
+        </section>
+<hr><hr>
+        <section id="grid">
+            <h2>Grid Gallery</h2>
+            <br>
+            <script src=""></script>
+            <div class="row">
+                <img class="gridPic" src="White.jpg">
+                <img class="gridPic" src="yellow.jpg">
+                <img class="gridPic" src="Orange.png">
+                <img class="gridPic" src="blue.jpg">
+                <br><br>
+            </div>
+            <div class="row">
+                <img class="gridPic" src="purple.jpg">
+                <img class="gridPic" src="Pink tulip.jpg">
+                <img class="gridPic" src="violet.jpg">
+                <img class="gridPic" src="Red rose.jpg">
+                <br><br>
+            </div>
+        </section>
+<br><br>
+<hr><hr>
+
+<section id="slide">
+<h2>Slide Show</h2>
+<div id="myCarousel" class="carousel_slide" data-ride="carousel">
+<div class="carousel-inner">
+    <div class="item active">
+        <img class="img-responsive" src="Red rose.jpg" alt="redRose" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Red Rose</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="Pink tulip.jpg" alt="PinkTulip" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Pink Tulip</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="White.jpg" alt="WhiteFlower" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>White Flower</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="Orange.png" alt="OrangeFlower" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Orange Flower</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="violet.jpg" alt="VioletFlower" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Violet Flower</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="yellow.jpg" alt="YellowFlower" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Yellow Flower</h3>
+        </div>
+    </div>
+    <div class="item">
+        <img class="img-responsive" src="blue.jpg" alt="BlueFlower" style="width:100%">;
+        <div class="carousel-caption">
+            <h3>Blue Flower</h3>
+        </div>
+    </div>
+
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon-glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+</a>
+
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon-glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+</a>
+
+</div>
+</section>
+    </center>
+</body>
